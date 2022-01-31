@@ -7,6 +7,111 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Form</h1>
+    <div class="container">
+      <!-- HEADER -->
+      <header>
+        <h1 id="title">Operating Systems Survey Form</h1>
+        <p id="description">
+          Please complete the following survey about which OS you prefer to
+          develop (Windows, Linux, MacOS).
+        </p>
+      </header>
+
+      <!-- FORM MAIN -->
+      <form id="survey-form">
+        <!-- INPUT NAME  -->
+        <div class="form-group">
+          <label for="name" class="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <!-- INPUT EMAIL -->
+        <div class="form-group">
+          <label for="email" class="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <!-- INPUT AGE -->
+        <div class="form-group">
+          <label for="number" id="number-label" class="age-label">Age (optional)</label>
+          <input
+            type="number"
+            id="number"
+            name="age"
+            class="form-control"
+            placeholder="Enter your age"
+            min="18"
+            max="110"
+          />
+        </div>
+
+        <!-- SELECT JOB -->
+        <div class="form-group">
+          <p>Which of the following activities do you do?</p>
+          <select name="role" id="dropdown" class="form-control" required>
+            <option disabled selected value="">Select one option</option>
+            <option value="student">Student</option>
+            <option value="fulltimejob">Full time job</option>
+            <option value="none">None</option>
+          </select>
+
+          <!-- SELECT COUNTRY -->
+        <div class="form-group">
+          <p>Which of the following countries would you like to travel to?</p>
+          <select name="role" id="dropdown" class="form-control" required>
+            <option disabled selected value="">Select one option</option>
+            <option value="chile">Chile</option>
+            <option value="japan">Japan</option>
+            <option value="us">U.S.A</option>
+            <option value="uk">United Kingdom</option>
+            <option value="newzealand">New Zealand</option>
+            <option value="southcorea">South Korea</option>
+          </select>
+        </div>
+
+        <!-- INPUT RADIO -->
+        <div class="form-group">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <label for=""><input name="" value="" type="radio" class="input-radio"> radio 1</label>
+          <label for=""><input name="" value="" type="radio" class="input-radio"> radio 2</label>
+          <label for=""><input name="" value="" type="radio" class="input-radio"> radio 3</label>
+        </div>
+
+        <!-- INPUT CHECKBOX -->
+        <div class="form-group">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <label for=""><input type="checkbox" name="" value="" class="input-checkbox">Checkbox 1</label>
+          <label for=""><input type="checkbox" name="" value="" class="input-checkbox">Checkbox 2</label>
+          <label for=""><input type="checkbox" name="" value="" class="input-checkbox">Checkbox 3</label>
+          <label for=""><input type="checkbox" name="" value="" class="input-checkbox">Checkbox 4</label>
+          <label for=""><input type="checkbox" name="" value="" class="input-checkbox">Checkbox 5</label>
+        </div>
+
+        <!-- TEXTAREA -->
+        <div class="form-group">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+          <textarea name="coment" id="coments" class="input-textarea" cols="30" rows="10" placeholder="Enter your coment here..."></textarea>
+        </div>
+
+        <!-- BUTTON SUBMIT -->
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
